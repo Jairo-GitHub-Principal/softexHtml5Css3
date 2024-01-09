@@ -1,0 +1,480 @@
+/* folha de estilo do site one page html5 e css3
+@outhor professor jos� de assis
+josedeassis.com.br*/
+
+/*  google fontes */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Noto+Sans:wght@700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Kanit:ital@0;1&display=swap');  */
+
+/* css reset */
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+
+
+/* aplicar as regras da para que a fonte do google seja aplicada no nosso projeto */
+body{
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+}
+
+/* Layout */
+.Container{
+    margin:0 auto;
+
+}
+
+/* cabe�alho o que for definido aqui fora do @media sera um comportamento padr�o, enquanto nenhuma condi��o seja defida para mudar esse conportamento */
+
+header{
+    height: 60px;
+}
+
+#logo img{
+    width: 128px;
+    height: 128px;
+    margin: 5px;
+
+
+}
+
+/* topo */
+
+/* logo topo*/
+
+.img{
+    border:solid 1px black;
+    border-radius: 45%;
+}
+
+/* tabalhando no menu para desktop e amburgur para smartphone */
+#check{
+    display: none;
+}
+
+.Amburguer{
+    font-size: 3em;
+    position: fixed;
+    top: 5px;
+    right: 15px;
+    color: rgba(0,0,0,0.5);
+
+}
+nav ul {
+    list-style: none;
+    background-color: #343538;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    transition: all 0.5s;
+}
+#check:checked~ul{
+    right: 0;
+}
+
+nav ul li{
+    padding: 20px;
+    border-bottom: 1px solid #a9a9a9;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* apartir daqui todo estilo implementado afetara qualquer tamanho de tela */
+/* Flex  toda tag que receber essa classe, recebera essas caracteristicas atribuidas a essa classe*/
+
+/* destaques main */
+main{
+    height: 75vh;
+    background:url(img/wolf-4166348_1920.jpg);
+    background-size:cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.Flex{
+    display: flex;
+    justify-content:space-between;
+}
+.Flex2{
+    display: flex;
+    align-items: center;
+
+}
+
+.Flex3{
+    display: flex;
+    flex-direction: column;
+}
+
+/* bot�o */
+
+.Botao{
+    font-family: 'Bungee Spice', sans-serif;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: 400;
+    text-shadow: 0px 1px 5px  white;
+    background-color: #c00000;
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+}
+
+
+
+
+
+
+/* voltar pro topo */
+/* para usar tpo right left botton, e excencial usar position fixed */
+#para-o-topo{
+
+    position:fixed;
+    right: 10px;
+    bottom: 10px;
+    text-align: right;
+}
+
+/* section id sobre */
+
+#sobre{
+    padding: 50px 0px;
+    background-image: url(img/sectionSobreII.jpg);
+    background-size: cover;
+    background-position: center;
+
+
+}
+#destaqueSobre{
+    display: none;
+  }
+
+  #textoSobre{
+    padding: 0px 10px;
+
+ }
+    #textoSobre h2{
+        margin-bottom: 10px;
+        color:rgb(254, 251, 255);
+        text-shadow: 0.05em 0.05em 0.5em  black;
+
+    }
+
+
+    .topicoSobre{ /*  classe implementada nas divis que contens os icondes html5 css3 e Seo */
+        margin-top: 20px;
+    }
+    .topicoSobre img{
+        margin-right: 10px;
+    }
+
+    /* one page */
+    #onepage{
+        padding: 50px 10px;
+    }
+    #onepage h2{
+        margin-bottom: 10px;
+
+    }
+    .textonepage{
+        margin-bottom:10px ;
+    }
+   #video iframe{
+    border:solid 1px red;
+   }
+
+   /* WireFrame */
+
+   #wireFrame{
+    padding: 50px 0px;
+    background:url(./img/wireFrame.jpg);
+    background-size: cover;
+    background-position: center;
+   }
+
+   #textoWireFrame{
+        color: #353a3c;
+        padding: 0px 10px;
+   }
+   #textoWireFrame h2{
+    margin-bottom: 10px;
+   }
+   #textoWireFrame p {
+    margin-bottom: 40px;
+   }
+   #textoWireFrame span{
+    display: none;
+   }
+
+   #qrcode{
+    display: none;
+   }
+/* Conteúdo */
+#Conteudo{
+padding: 20px 0px;
+}
+#Conteudo h2{
+    text-align: center;
+    margin: 10px;
+}
+
+
+
+/* Card */
+.CardContainer{
+    border: solid 2px red;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+.Card{
+    border:solid 2px black;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    height: 520px;
+    width: 338px;
+    text-align: center;
+}
+.Card img{
+    height: 250px;
+    width: 100%;
+    border-radius: 25px 25px 0px 0px;
+}
+.Card h3{
+    margin: 10px;
+}
+.Card p{
+    text-align: left;
+    padding: 0px 10px;
+}
+.Card a{
+    margin: 5px 10px;
+}
+
+#Todos{
+    margin-top: 30px;
+    text-align: center;
+}
+#Todos a{
+    text-decoration:none;
+    color: black;
+}
+
+
+
+/* smartphone portrait retrato,
+vh == view heigth e vw == view width se eu classifico uma largura como 75vh == a altura do componente sera == 75% da altura da tela do navegador */
+
+@media(max-width:575px){
+    main h1, main h2{
+        text-shadow:black 1px 1px 5px ;
+      }
+      .imgHtmlCssSeo{
+        width: 15vw;
+        height: 10vh;
+    }
+    #video iframe{
+        width: 354px;
+        height: 190px;
+    }
+
+    .imgCard{
+        width: 100vw;
+    }
+
+
+}
+
+main h1{
+    font-size: 2.5em;
+}
+main h2{
+    font-size: 1em;
+    margin: 30px 0px 50px 0px;
+}
+
+
+/*  smartphone landscape  ou paisagem */
+
+@media(min-width:576px){
+
+    /* layout */
+    .Container{
+        max-width: 540px;
+    }
+
+    main h1, main h2{
+        text-shadow:black 1px 1px 5px ;
+
+    }
+    .imgHtmlCssSeo{
+        width: 10vw;
+        height: 15vh;
+    }
+}
+/*  tablet portrait retrato */
+@media(min-width:768px){
+
+    /* layout */
+    .Container{
+        max-width: 720px;
+    }
+
+    /* destaque */
+
+    main{
+        height: 45vh;
+    }
+
+    main h1{
+        font-size: 5.5em;
+    }
+    main h2{
+        font-size: 2em;
+    }
+
+    .imgHtmlCssSeo{
+        width: 100px;
+        height: 100px;
+    }
+}
+/*  tablet landscape  ou paisagem */
+@media(min-width:992px){
+
+    /* layout */
+    .Container{
+        max-width: 960px;
+    }
+
+    /* destaque main */
+    main{
+        height: 70vh;
+    }
+
+    .imgHtmlCssSeo{
+        width: 100px;
+        height: 100px;
+    }
+
+    /* one page */
+    #video iframe{
+        width:560px;
+        height:315px;
+    }
+}
+
+/* pc ou  notebook landscape ou prtrait */
+
+@media(min-width:1200px){
+
+    /* layout */
+    .Container{
+        max-width: 1140px;
+    }
+    main{
+        height: 70vh;
+    }
+
+    /* cabe�alho header */
+    header{
+        height: 120px;
+    }
+    #logo img{
+        height:180px ;
+        width: 180px;
+        margin: 30px;
+    }
+        /* esconde o menu amburguer */
+    .Amburguer{
+        display: none;
+    }
+    /* exibir permanentimente o menu tradicional para tela de pc e notbook */
+    nav ul {
+        position: static;
+        height: auto;
+        background-color: transparent;
+        margin-top: 50px;
+    }
+
+    nav ul li{
+        float: left;
+        border: 0;
+
+    }
+    nav ul li a {
+        color: #343538;
+
+    }
+    nav ul li a:hover{
+        color: #c00000;
+    }
+    .imgHtmlCssSeo{
+        width: 100px;
+        height: 100px;
+    }
+
+    #destaqueSobre{
+        display: inline;
+               margin-right:50px;
+    }
+    #destaqueSobre img{
+        border-radius: 50%;
+
+    }
+    .imgNotebook{
+        width: 500px;
+        height: 390px;
+    }
+
+    #sobre{
+        background-attachment: fixed;
+    }
+    /* section one page */
+    .Flex3{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    /* Wireframe */
+
+    #wireFrame{
+        background-attachment: fixed;
+    }
+    #wireFrame span{
+        display: inline;
+        color: #c00000;
+    }
+    #qrcode{
+        display: inline;
+    }
+    #qrcode img{
+        width: 225px;
+        height: 225px;
+    }
+
+
+}
+
+
