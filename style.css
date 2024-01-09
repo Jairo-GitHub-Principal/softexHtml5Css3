@@ -282,6 +282,55 @@ padding: 20px 0px;
     color: black;
 }
 
+/* Rodapé */
+
+/* imagens de contatos */
+#contato img{
+    width: 50px;
+    height: 50px;
+}
+/* imagens de endereços */
+#endereco img{
+    width: 50px;
+    height: 50px;
+}
+.copright{
+    padding: 15px;
+}
+/* imagens das redes sociais */
+.redesocial img{
+    width: 50px;
+    height: 50px;
+}
+/* ocultar o icone de id iconelocal */
+#iconelocal{
+    display: none;
+}
+#redesocial{
+    margin: 0;
+
+}
+
+
+/* rodapé */
+footer{
+    padding: 50px;
+    background-color: #353a3c;
+    color: #fff;
+    text-align: center;
+}
+/* organiza os icones e o copright de forma que força o copright ficar abaixo dos icones das redes sociais */
+.FlexFooter{
+    display: flex;
+    flex-direction: column-row;
+    justify-content: space-between;
+    align-items: center;
+}
+/* ocultar o mapa da localização em tempo real */
+#googleMap{
+    display: none;
+}
+
 
 
 /* smartphone portrait retrato,
@@ -303,6 +352,16 @@ vh == view heigth e vw == view width se eu classifico uma largura como 75vh == a
     .imgCard{
         width: 100vw;
     }
+    .FlexFooter{
+         flex-direction: column-reverse;
+    }
+    #redesocial{
+        margin: 20px;
+        
+    }
+    
+    
+
 
 
 }
