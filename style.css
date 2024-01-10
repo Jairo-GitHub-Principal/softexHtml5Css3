@@ -23,10 +23,15 @@ body{
     font-size: 1em;
 }
 
-/* Layout */
+/* Layout  ________________________*/
 .Container{
     margin:0 auto;
 
+}
+
+/* suavizar o scrow da pagina */
+html{
+    scroll-behavior: smooth;
 }
 
 /* cabe�alho o que for definido aqui fora do @media sera um comportamento padr�o, enquanto nenhuma condi��o seja defida para mudar esse conportamento */
@@ -63,13 +68,14 @@ header{
     top: 5px;
     right: 15px;
     color: rgba(0,0,0,0.5);
+    text-shadow: 0px 0px 3px white;
 
 }
 nav ul {
     list-style: none;
-    background-color: #343538;
+    background-color: rgba(52,53,56,0.7);
     height: 100vh;
-    width: 100%;
+    width: 60%;
     position: fixed;
     top: 60px;
     right: -100%;
@@ -515,6 +521,7 @@ main h2{
         height: auto;
         background-color: transparent;
         margin-top: 50px;
+        width: 100%;
     }
 
     nav ul li{
